@@ -1,5 +1,5 @@
 const {sequelize} = require('./db');
-const {Restaurant, Menu, Parking} = require('./index')
+const {Restaurant, Menu, Parking} = require('./index');
 
 describe('Restaurant', () => {
     /**
@@ -28,4 +28,5 @@ describe('Restaurant', () => {
         const testparking = await Parking.create({ paid: 'true'})
         expect(testparking.paid).toBe(true)
     })
+    
 })

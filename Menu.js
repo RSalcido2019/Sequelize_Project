@@ -7,7 +7,8 @@ class Menu extends Model {}
 // Create attributes for menu model
 Menu.init({
 	
-	meal: DataTypes.ENUM('Breakfast', 'Lunch', 'Dinner')
+    meal: DataTypes.ENUM('Breakfast', 'Lunch', 'Dinner')
+    
 }, {
 	sequelize
 })
